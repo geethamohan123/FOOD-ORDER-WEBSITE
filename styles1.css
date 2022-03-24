@@ -1,0 +1,514 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box; 
+	font-family: sans-serif;
+	font-style: italic;
+	transition: all .2s linear;
+}
+.b{
+	 font-size: 3rem;
+	 font-family: cursive;
+	 font-style: italic;
+	 font-weight: bolder;
+	 text-shadow: .1rem .1rem .3rem #333;
+	 color: #fff;
+	 margin: 1rem 0;
+	 opacity: 0.7;
+}
+.btn{
+	   
+	   margin-top: 3rem;
+	   transition: 0.2s ease-in;
+	   background-color: lightgray;
+	   border-radius: 7px;
+}
+/*.btn:hover{
+	background-color: black;
+	color: yellow;
+	transform: scale(1.5);
+}*/
+.ho{
+	position: relative;
+	top: 5rem;
+	left: 5rem;
+}
+
+html
+{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.header1{
+	text-align: center;
+	position: relative;
+	top: 2rem;
+	text-transform: capitalize;
+	font-size: 2rem;
+	word-spacing: 2.5px;
+	font-style: italic;
+	color: orangered;
+
+}
+.flex-container{
+	width: 100%;
+	position: sticky;
+	top:0px; 
+	display: flex;
+    align-items: center;
+    justify-content: space-between;  /*because of this logo moves too right total two items inbetween spaces nav and div*/
+    padding: 2rem 4rem;
+    background-color: green;
+    min-height: 20vh;
+    z-index: 1000;
+}
+.flex-container nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.5rem;
+}
+
+.flex-container nav ul li:hover{
+		background-color: black;
+	}
+
+.flex-container nav ul li a:hover{
+	color: yellow;
+	font-size: 1.75rem;
+}
+
+.flex-container nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-container nav ul li{
+	list-style-type: none;
+	padding:10px;    
+    display:inline-block;
+    border: 1px solid yellow;
+    border-radius: 5rem;
+	text-align: center;
+	margin-right: 4rem;
+
+
+}
+.logo {
+	height: 10rem;
+}
+
+.container-fluid{
+	min-height: 20vh;   
+	background: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.6));; */
+
+}
+
+.top-header{
+	width: 100%;
+	height: 1vh;
+	background-color: white;
+}
+
+.top-header img{
+	width: 50%;
+	height: 10vh;
+	align-items: center;
+	text-align: center;
+}
+.items{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px; 
+}
+.item img{
+	width: 100%;  /*after this statement all iamges size adjsut according to the screen*/
+	height: 200px; 
+	object-fit: cover; /*inside the every grid image shrinks itself based on size of screen decreasing*/
+	cursor: pointer;
+	transition : 0.2s ease;
+}
+.item img:hover{
+	transform: scale(1.04);
+}
+.item h4{
+	padding: 5px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.item button{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: green;
+	color: white;
+	cursor: white;
+	border-radius: 5px;
+	font-size: 20px;
+	transition: 0.2s all;
+}
+.item button:hover{
+	transform: scale(1.04);
+	cursor: pointer;
+}
+
+.home-div{
+   margin-bottom: 2rem;
+	border: 1px solid black;
+	background :linear-gradient(0deg ,rgba(0,0,0,.6),rgba(0,0,0,.6));
+	min-height: 100vh; 
+/*	background-image: url("back1.jpg");
+	background-repeat: no-repeat;*/
+
+
+}
+.div-head{
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.div1{
+       width: 60%;
+       padding: 5rem;	
+}
+.div2{
+	 position: relative;
+	 right: 10rem;
+}
+
+.iamge1{
+	width: 250px;
+}
+.para{
+	font-size: 1.75rem;
+	font-style: italic;
+	font-family: cursive;
+	text-align: justify;
+	text-transform: capitalize;
+	line-height:3rem ;
+}
+
+ .heading{
+ 	text-align: center;
+ 	padding: 2.5rem 0;
+ 	color: yellow;
+ 
+ }
+ .heading span{
+ 	font-size: 3.0rem;
+   background: rgba(200, 200, 0, 1.0);
+ 	color:green;
+ 	border-radius:.5rem;
+ 	padding:.2rem 1rem;
+ }
+ 
+
+ .review .wrapper{
+ 	border: 1px solid black;
+ 	background-color: lightgray;
+ 	border-radius: 2rem;
+
+
+ }
+.review .box{
+	padding: 2rem;
+	text-align: center;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+	border-radius: .5rem;
+}
+.review .box img{
+	height: 13rem;
+	width: 13rem;
+	border-radius: 50%;
+	object-fit: conver;
+	margin-bottom: 1rem;
+}
+.review .box h3{
+	color: #333;
+	font-size: 2.5rem;
+}
+.review .box p{
+	color: #666;
+	font-size: 1.5rem;
+	padding: 1rem 0;
+}
+
+.review .box .stars i{
+	color: yellow;
+	font-size: 1.7rem;
+}
+.review .review-slider{
+	margin: 0 2rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+.contact .row{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+	margin: 3rem;
+
+	
+}
+.contact .row .image{
+	flex: 1 1 35rem;
+}
+.contact .row .image img{
+	width: 100%;
+	height: 50vh;
+}
+.contact .row form{
+	flex: 1 1 50rem;
+	padding: 2rem;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+	border-radius: 0.5rem;
+	background-color: lightgray;
+}
+.contact .row form .inputBox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contact .row form .inputBox input{
+   width: 100%;
+   margin: 1rem 0;
+   padding: 0.5rem;
+   font-size: 1.0rem;
+   color: #333;
+   background: #f7f7f7;
+}
+
+.contact .heading{
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+}
+
+footer{
+	background: #111;
+	height: auto;
+	width: 100vw;
+	font-family: "Open sans";
+	padding-top: 40px;
+	color: #fff;
+
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+ .footer-content h3{
+ 	font-size: 1.8rem;
+ 	font-weight: 400;
+ 	text-transform: capitalize;
+ 	line-height: 3rem;
+ }
+ .footer-content p{
+ 	max-width: 500px;
+ 	margin: 10px auto;
+ 	line-height: 28px;
+ 	font-size: 14px;
+ }
+ .socials{
+ 	list-style: none;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	margin: 1rem 0 3rem 0;
+ }
+ .socials li{
+ 	margin: 0 10px;
+ }
+ .socials a{
+ 	text-decoration: none;
+ 	color: #fff;
+ }
+ .socials a i{
+ 	font-size: 1.1rem;
+ 	transition: color .4s ease;
+ }
+ .socials a:hover i{
+ 	color: aqua;
+ }
+ .footer-bottom{
+ 	background: #000;
+ 	width: 100vw;
+ 	padding: 20px 0;
+ 	text-align: center;
+ }
+ .footer-bottom p{
+ 	font-size: 14px;
+ 	word-spacing: 2px;
+ 	text-transform: capitalize;
+ }
+ .footer-bottom span{
+ 	text-transform: uppercase;
+ 	opacity: .4;
+ 	font-weight: 200;
+ }
+
+
+
+@media only screen and (max-width: 680px)
+{	
+	.flex-container nav ul{
+		flex-direction: column;
+		width: 350%;
+		background-color:  linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.6));
+	   padding-left: 2rem;
+	   border-radius: 5px;
+	   position: relative;
+	   bottom: 1rem;
+	}
+	.flex-container nav ul li{
+	
+		padding-bottom: 0rem;
+		width: 100%;
+		text-align: center;
+		border: 0px;
+		border-radius: 0px;
+		margin-bottom: 0rem;	
+	}
+	#m{
+		padding-bottom: 3px;
+	}
+	.logo{
+           height: 9rem;
+           position: relative;
+           right: 1rem;
+           top: 0rem;
+	}
+	.flex-container nav ul li a{
+   text-decoration: none;
+   padding: 0px;
+   color: #fff;
+   font-size: 1rem;
+   line-height: 0px;
+  }
+
+  .heading{
+ 	text-align: center;
+ 	padding: 2.0rem 0;
+ }
+ .heading span{
+ 	font-size: 2.0rem;
+ }
+ .div-head{
+ 	margin-bottom: 5rem;
+ }  
+  .contact .row{
+  	display: flex;
+  	flex-direction: column;
+  }
+  .contact .row .image img{
+	width: 100%;
+	height: 50vh;    
+  }
+
+ }
+
+
+@media only screen and (max-width: 600px)
+{	
+	.flex-container nav ul{
+		width: 200%;		
+	}
+	.header1{
+		font-size: 1.5rem;
+	}
+
+
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.items{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.b{
+		font-size: 2rem;
+	}
+		
+}
+
+@media only screen and (max-width: 700px)
+{
+	.items{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 900px)
+{
+	.div-head{
+		display: flex;
+		flex-direction: column;
+		margin-left: 1rem;
+	}
+	.div1{
+		width: 100%;
+		
+	}
+	.div2
+	{
+		width: 100%;
+		text-align: center;
+		align-content: center;
+		position: relative;
+		right: 0rem;
+	}
+	.review .review-slider{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+   }
+   
+}
+
+
+@media only screen and (max-width: 1200px)
+{   
+	.contact .row form{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 400px)
+{
+	.home-div{
+	min-height: 50vh;
+	background-size: 100% 50vh; 
+   }
+   .review .review-slider{
+   	display: grid;
+   	grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+@media only screen and (max-width: 370px)
+{
+	.items{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+   }
+   .top-header{
+   	height: 0;
+   }
+  
+}
+
+
